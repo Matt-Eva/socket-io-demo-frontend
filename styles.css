@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-rows: calc(100vh - 100px) 100px;
+}
+
+#message-form{
+    grid-row: 2;
+}

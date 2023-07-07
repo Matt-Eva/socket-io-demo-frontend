@@ -17,3 +17,7 @@ form.addEventListener("submit", (e) =>{
     console.log(e.target.message.value)
     socket.emit("message", e.target.message.value)
 })
+
+fetch("http://localhost:4000")
+    .then(r => r.json())
+    .then(console.log)
